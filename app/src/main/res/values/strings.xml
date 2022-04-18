@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KairosDS-DX</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="login">Login</string>
+    <string name="register">Registrar</string>
+    <string name="Name">Nombre(s)</string>
+    <string name="last_name">Apellidos</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_paswword">Confirmar contraseña</string>
+    <string name="go_to">Ir a</string>
+    <string name="enter">Ingresar</string>
+    <string name="navigation_open">Abrir</string>
+    <string name="navigation_closed">Cerrar</string>
+    <string name="add_card">Solicitar Tarjeta</string>
+    <string name="my_card">Mis Cuentas</string>
+    <string name="log_out">Cerrar Sesión</string>
+    <string name="acounts">Cuenta</string>
+    <string name="helper_required">Requerido</string>
+
+
+</resources>

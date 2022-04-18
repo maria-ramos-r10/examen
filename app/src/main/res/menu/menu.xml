@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".nav_header_main">
+
+    <group>
+        <item android:id="@+id/myAccountsFragment"
+            android:icon="@drawable/ic_card"
+            android:title="@string/my_card"/>
+
+        <item android:id="@+id/requestCard2"
+            android:icon="@drawable/ic_add_card"
+            android:title="@string/add_card"/>
+
+    </group>
+
+    <item android:title="@string/acounts">
+        <menu>
+            <item android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/log_out"/>
+        </menu>
+    </item>
+
+
+
+</menu>

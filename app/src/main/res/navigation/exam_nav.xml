@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exam_nav"
+    app:startDestination="@id/homeUser2">
+
+    <fragment
+        android:id="@+id/loginUser3"
+        android:name="com.example.android.examenkairos.user.login.LoginUserFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginUser3_to_registerUser2"
+            app:destination="@id/registerUser" />
+        <action
+            android:id="@+id/action_loginUser3_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerUser"
+        android:name="com.example.android.examenkairos.user.register.RegisterUserFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerUser_to_loginUser3"
+            app:destination="@id/loginUser3" />
+        <action
+            android:id="@+id/action_registerUser_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeUser2"
+        android:name="com.example.android.examenkairos.user.home.HomeUserFragment"
+        android:label="fragmente_home"
+        tools:layout="@layout/fragmente_home" >
+        <action
+            android:id="@+id/action_homeUser2_to_registerUser"
+            app:destination="@id/registerUser" />
+        <action
+            android:id="@+id/action_homeUser2_to_loginUser32"
+            app:destination="@id/loginUser3" />
+    </fragment>
+    <fragment
+        android:id="@+id/myAccounts"
+        android:name="com.example.android.examenkairos.account.listaccount.MyAccountsFragment"
+        android:label="fragment_my_accounts"
+        tools:layout="@layout/fragment_my_accounts" />
+    <fragment
+        android:id="@+id/requestCard"
+        android:name="com.example.android.examenkairos.account.requestaccount.RequestCardFragment"
+        android:label="fragment_request_card"
+        tools:layout="@layout/fragment_request_card" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.android.examenkairos.home.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+
+</navigation>

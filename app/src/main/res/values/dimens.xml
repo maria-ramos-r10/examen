@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="commo_padi_btnLogin">250dp</dimen>
+    <dimen name="commo_paddi_alt">180dp</dimen>
+    <dimen name="commo_paddi_altmin">100dp</dimen>
+    <dimen name="commo_paddi_default">16dp</dimen>
+    <dimen name="commo_paddi_maxi">55dp</dimen>
+    <dimen name="commo_paddi_min">8dp</dimen>
+    <dimen name="commo_paddi_tie">40dp</dimen>
+    <dimen name="commo_paddi_max">64dp</dimen>
+    <dimen name="commo_paddi_logo">450dp</dimen>
+    <dimen name="commo_paddi_maxin">80dp</dimen>
+</resources>

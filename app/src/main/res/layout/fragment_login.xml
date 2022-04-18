@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/orange_lite"
+    tools:context=".user.login.LoginUserFragment">
+
+    <ImageView
+        android:id="@+id/logo_kairos"
+        android:layout_width="@dimen/commo_paddi_altmin"
+        android:layout_height="@dimen/commo_paddi_altmin"
+        android:layout_margin="@dimen/commo_paddi_default"
+        android:src="@mipmap/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_LoginEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_margin="@dimen/commo_paddi_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_kairos"/>
+
+    <TextView
+        android:id="@+id/tv_LoginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commo_paddi_altmin"
+        android:text="@string/password"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintStart_toStartOf="@id/tv_LoginEmail"
+        app:layout_constraintEnd_toEndOf="@id/tv_LoginEmail"
+        app:layout_constraintTop_toBottomOf="@id/tv_LoginEmail"/>
+
+    <TextView
+        android:id="@+id/tv_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/go_to"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintEnd_toEndOf="@id/btn_register"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/til_LoginPassword"
+        app:layout_constraintTop_toBottomOf="@id/til_LoginPassword" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@id/til_LoginPassword"
+        app:layout_constraintTop_toBottomOf="@id/til_LoginPassword" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_LoginEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commo_paddi_min"
+        app:helperText="@string/helper_required"
+        app:layout_constraintStart_toStartOf="@id/tv_LoginEmail"
+        app:layout_constraintEnd_toEndOf="@id/tv_LoginEmail"
+        app:layout_constraintTop_toBottomOf="@id/tv_LoginEmail"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_LoginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/commo_paddi_min"
+        app:helperText="@string/helper_required"
+        app:layout_constraintStart_toStartOf="@id/tv_LoginPassword"
+        app:layout_constraintEnd_toEndOf="@id/tv_LoginPassword"
+        app:layout_constraintTop_toBottomOf="@id/tv_LoginPassword"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/mbtn_ingreso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:text="@string/enter"
+        app:backgroundTint="@color/orange"
+        app:layout_constraintStart_toStartOf="@id/til_LoginPassword"
+        app:layout_constraintEnd_toEndOf="@id/til_LoginPassword"
+        app:layout_constraintTop_toBottomOf="@id/til_LoginPassword"/>
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
