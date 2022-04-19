@@ -2,6 +2,10 @@ package com.example.android.examenkairos
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.webkit.PermissionRequest
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContract
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -12,12 +16,14 @@ import com.example.android.examenkairos.user.home.HomeUserFragment
 import com.example.android.examenkairos.user.login.LoginUserFragment
 import com.example.android.examenkairos.user.register.RegisterUserFragment
 import com.google.android.material.navigation.NavigationView
+import java.util.jar.Manifest
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var mBindign: ActivityMainBinding
     private lateinit var mActiveFragment: Fragment
     private lateinit var mFragmentManager: FragmentManager
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +36,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener(this)
+
+
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {

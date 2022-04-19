@@ -6,10 +6,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".account.requestaccount.RequestCardFragment">
 
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <TextView
+        android:id="@+id/tv_my_accouts"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/add_card" />
+        android:layout_margin="@dimen/commo_paddi_default"
+        android:text="@string/add_card"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 
 
 

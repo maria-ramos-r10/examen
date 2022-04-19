@@ -6,7 +6,7 @@
     android:id="@+id/home_coorlayout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
+    tools:openDrawer="start"
     tools:context=".home.HomeActivity">
 
     <include

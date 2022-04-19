@@ -9,6 +9,7 @@ import androidx.navigation.Navigation
 import com.example.android.examenkairos.R
 
 class RegisterUserFragment :Fragment(){
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

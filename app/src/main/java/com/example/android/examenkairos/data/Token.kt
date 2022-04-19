@@ -1,4 +1,3 @@
 package com.example.android.examenkairos.data
 
-class Token {
-}
+data class Token (val token: String)
