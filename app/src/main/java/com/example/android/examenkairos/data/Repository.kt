@@ -6,7 +6,7 @@ class Repository {
 
     private val api = ApiService()
 
-    suspend fun loginToken(user: User):Token {
+    suspend fun loginToken(user: UserLogin):Token {
         val respuesta = api.getToken(user)
         return respuesta
     }
